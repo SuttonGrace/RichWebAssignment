@@ -1,5 +1,5 @@
 function dispAbt(){
-			$('.box').removeClass('box-exp box-int');
+			$('.box').removeClass('box-exp box-int box-awa box-skill');
 			$('.box').addClass('box-abt');
 			
 			document.getElementById('abt-txt').style.display='block';
@@ -20,7 +20,7 @@ function dispAbt(){
 		};
 		
 		function dispExp(){
-			$('.box').removeClass('box-abt box-int');
+			$('.box').removeClass('box-abt box-int box-awa box-skill');
 			$('.box').addClass('box-exp');
 			
 			document.getElementById('abt-txt').style.display='none';
@@ -40,7 +40,8 @@ function dispAbt(){
 		};
 		
 		function dispAwa(){
-			$('.box').addClass('box-exp');
+			$('.box').removeClass('box-abt box-int box-exp box-skill');
+			$('.box').addClass('box-awa');
 		
 			document.getElementById('abt-txt').style.display='none';
 			$('.abt-img').hide();
@@ -58,7 +59,10 @@ function dispAbt(){
 			$('.int-img').hide();
 		};
 		
-		function dispSkill(){		
+		function dispSkill(){
+			$('.box').removeClass('box-abt box-int box-exp box-awa');
+			$('.box').addClass('box-skill');	
+			
 			document.getElementById('abt-txt').style.display='none';
 			$('.abt-img').hide();
 			
@@ -76,7 +80,7 @@ function dispAbt(){
 		};
 		
 		function dispInt(){
-			$('.box').removeClass('box-abt box-exp');
+			$('.box').removeClass('box-abt box-exp box-awa box-skill');
 			$('.box').addClass('box-int');
 		
 			document.getElementById('abt-txt').style.display='none';

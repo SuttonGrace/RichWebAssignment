@@ -41,7 +41,7 @@
 
 .bg-1 {
     background-color: #2B2B2B;
-	background-image: url('simple-one-color-grey-background-1920x1200.jpg');
+	background-image: url('background/simple-one-color-grey-background-1920x1200.jpg');
     color: #ffffff;
 }
 
@@ -73,7 +73,16 @@
 {
 	background: rgba(0, 0, 0, 0.5);
 	border-radius: 25px;
-	border: 5px solid #6E254A;
+	border: 5px solid #00A400;
+	margin-top: 5%;
+	margin-bottom:5%;
+}
+
+.box-skill
+{
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 25px;
+	border: 5px solid #FFCC00;
 	margin-top: 5%;
 	margin-bottom:5%;
 }
