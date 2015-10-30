@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Grace Sutton Portfolio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -9,35 +9,138 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="stylesheet" type="text/css" href="animate.min.css">
+  <script src="script.js"></script>
 </head>
-<body>
+<body onload="dispAbt()" class ="bg-1">
 
 <div class="container">
   <div class="row">
 	<div class="col-md">
-		<script>
-		
-			$(document).ready(function(){
-				$("h1").click(function(){
-					$('h1').addClass('animated bounceOutUp');
-					$('p').addClass('animated bounceOutDown');
-				});
-			});
-			
-			
-		</script>
-		
-		
-		<div class="index-text">
+		<div class ="fixed_header">
 			<h1>Grace Sutton</h1>
-			<p>Student at DIT</p>
+			<p>Student at DIT<p>
 		</div>
+		
+
+		<div class='container box animated fadeIn'>
+			<div class='col-md text-center'>
+				<img src='cat-eating-salad.png' class='abt-img text-center img-templ img-rounded animated pulse' alt='Its a cat'>
+				<img src='exp-logo.png' class='exp-img img-templ animated pulse' alt='Experience page logo'>
+				<img src='awards-logo.png' class='awa-img img-templ animated pulse' alt='Awards page logo'>
+				<img src='skill-logo.png' class='skill-img img-templ animated pulse' alt='Skills page logo'>
+				<img src='int-logo.png' class='int-img img-templ animated pulse' alt='Interests page logo'>
+				
+					<div class='col-xs'>
+						<button type='button' id='abt_btn' class='btn' onclick='dispAbt()'>About</button>
+						<button type='button' id='exp_btn' class='btn' onclick='dispExp()'>Experience</button>
+						<button type='button' id='awa_btn' class='btn' onclick='dispAwa()'>Awards</button>
+						<button type='button' id='skill_btn' class='btn' onclick='dispSkill()'>Skills</button>
+						<button type='button' id='int_btn' class='btn' onclick='dispInt()'>Interests</button>
+					</div>				
+			</div>
+			
+				
+				<div id='abt-txt' class='fill-text animated fadeIn'>
+					Grace is a dedicated and hardworking student currently in her second year of study in a four year BSc. Honours course in Computer Science. <br>From her experience with this course, Grace has developed knowledge and experience in many programming languages such as C, C#, PHP, HTML and SQL. This course has granted Grace a firm understanding of the fundamentals of Computer Science, and has fueled her interest and passion in the subject.
+					Grace has a strong interest in volunteering and this is reflected in her experience working with various charities. She has volunteered for Oxfam on several occasions, as well as several local organisations. Grace has worked on a team for local community events, most notably the Regatta Festival and Arts Festival which both take place in her locality. Events such as this have helped her develop and improve teamwork and project management skills.
+					On campus, Grace has been involved in events organised by students of DIT. Most recently Grace participated in DIT's games, anime, and sci-fi convention, GAScon as a volunteer. She also participated in a Game Development workshop for second level students held in DIT.
+					Volunteering and working on team projects has granted Grace invaluable skill and experience working with others and organising events.<br>
+					<br>
+					<br>
+				</div>
+
+				
+				<div id='exp-txt' class = 'text-center fill-text animated fadeIn'>
+					<h2>Experience</h2>
+					<br>
+					
+					<div class='row'>
+						<div class ='text-center'>
+							<img src="mc_logo.png" class="main-img" alt="MCard logo">
+							<p><b>Jan 2015 - Aug 2015</b></p>
+							<p>Intern</p>
+						</div>
+					</div>		
+						
+				</div>
+					<br>
+					<br>
+				
+				<div id='awa-txt' class = 'fill-text animated fadeIn'>
+					Awards and Acheivements
+					<br>
+					
+					<div class='row'>
+						<div class ='col-md-4 text-center mini-box'>
+							<img src="achieve-logo.png" class="main-img" alt="MCard logo">
+							<p><b>Hackathon Winner 2015</b></p>
+							<p>Member of the winning team in the MasterCard Intern Hackathon Challenge that took part in August 2015<br></p>
+						</div>
+							
+						<div class='col-md-4 text-center mini-box'>
+							<img src="achieve-logo.png" class="main-img img-rounded" alt="DIT logo">
+							<p><b>Academic Excellence 2013</b></p>
+							<p>Received for achieving exceptional grades in school exams</p>
+						</div>		
+						
+					</div>
+					<br>
+					<br>
+				</div>
+				
+				<div id='skill-txt' class = 'fill-text animated fadeIn'>
+					Skills
+					<br>
+					
+					<div class='row'>
+						<div class ='col-md-4 text-center mini-box'>
+							<img src="mc_logo.png" class="main-img" alt="MCard logo">
+							<p><b>Jan 2015 - Aug 2015</b></p>
+							<p>yo yo yo</p>
+						</div>
+							
+						<div class='col-md-4 text-center mini-box'>
+							<img src="dit_logo.png" class="main-img img-rounded" alt="DIT logo">
+							<p><b>2012 - Present</b></p>
+							<p>I am a student yo</p>
+						</div>		
+						
+					</div>
+					<br>
+					<br>
+				</div>
+				
+				<div id='int-txt' class = 'fill-text animated fadeIn'>
+					Interests
+					<br>
+					
+					<div class='row'>
+						<div class ='col-md-4 text-center mini-box'>
+							<img src="mc_logo.png" class="main-img" alt="MCard logo">
+							<p><b>Jan 2015 - Aug 2015</b></p>
+							<p>yo yo yo</p>
+						</div>
+							
+						<div class='col-md-4 text-center mini-box'>
+							<img src="dit_logo.png" class="main-img img-rounded" alt="DIT logo">
+							<p><b>2012 - Present</b></p>
+							<p>I am a student yo</p>
+						</div>		
+						
+					</div>
+					<br>
+					<br>
+				</div>
+				
+			</div>	
+				
+				
+			</div>
+		</div>	
+		</div>
+	</div>
   </div>
 </div>
-<div>
-
-
-
 
 </body>
 </html>
