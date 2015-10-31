@@ -1,61 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Grace Sutton Portfolio</title>
+  <title>C12408218 Grace Sutton</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link rel="stylesheet" type="text/css" href="animate.min.css">
-  <script src="script.js"></script>
+  <!--CSS file-->
+  <link rel="stylesheet" type="text/css" href="CSS/style.css">
+  <!--JS file-->
+  <script src="JavaScript/portfolio.js"></script>
 </head>
+
 <body onload="dispAbt()" class ="bg-1">
 
 <div class="container">
   <div class="row">
 	<div class="col-md">
 	
-		<div class='container'id = 'box'>
+		<div class='container' id = 'box'>
 			<div class='col-md text-center'>
-				<img src='logo/cat-eating-salad.png' class='abt-img text-center img-templ img-rounded animated pulse' alt='Its a cat'>
-				<img src='logo/exp-logo.png' class='exp-img img-templ animated pulse' alt='Experience page logo'>
-				<img src='logo/awards-logo.png' class='awa-img img-templ animated pulse' alt='Awards page logo'>
-				<img src='logo/skill-logo.png' class='skill-img img-templ animated pulse' alt='Skills page logo'>
-				<img src='logo/int-logo.png' class='int-img img-templ animated pulse' alt='Interests page logo'>
+				<!--Title images for sections-->
+				<img src='Images/logo/cat-eating-salad.png' class='abt-img text-center img-templ img-rounded animated pulse' alt='Its a cat'>
+				<img src='Images/logo/exp-logo.png' class='exp-img img-templ animated pulse' alt='Experience page logo'>
+				<img src='Images/logo/awards-logo.png' class='awa-img img-templ animated pulse' alt='Awards page logo'>
+				<img src='Images/logo/edu-logo.png' class='edu-img img-templ animated pulse' alt='Education page logo'>
+				<img src='Images/logo/skill-logo.png' class='skill-img img-templ animated pulse' alt='Skills page logo'>
+				<img src='Images/logo/int-logo.png' class='int-img img-templ animated pulse' alt='Interests page logo'>
 				
 				<div class ="fixed-header">
 					<h1>Grace Sutton</h1>
 				</div>
 				
 					<div class='col-xs'>
+						<!--Navigational buttons-->
 						<button type='button' id='abt_btn' class='btn' onclick='dispAbt()'>About</button>
 						<button type='button' id='exp_btn' class='btn' onclick='dispExp()'>Experience</button>
 						<button type='button' id='awa_btn' class='btn' onclick='dispAwa()'>Awards</button>
+						<button type='button' id='edu_btn' class='btn' onclick='dispEdu()'>Education</button>
 						<button type='button' id='skill_btn' class='btn' onclick='dispSkill()'>Skills</button>
 						<button type='button' id='int_btn' class='btn' onclick='dispInt()'>Interests</button>
 					</div>				
 			</div>
 			
-				
+				<!--About section, displays on page load also-->
 				<div id='abt-txt' class='fill-text animated fadeIn'>
 					<h2>Hello</h2>
-					<p>Currently in final year of study, BSc. Computer Science</p>
+					<p>I am a Computer Science student currently in my final year of study in DIT.
+					From my experience with this course, I have developed knowledge and experience in many programming languages such as C, C#, PHP, HTML and SQL. 
+					This course has granted me a firm understanding of the fundamentals of Computer Science, and has fueled my interest and passion in the subject.
+					I also have an interest in volunteering and have experience working with various charities. 
+					I enjoy volunteering for Oxfam as well as several local organisations. 
+					In my free time, I enjoy reading books, Manga and Gaming</p>
 					<br>
 					<br>
 				</div>
 
-				
+				<!--Experience section-->
 				<div id='exp-txt' class = 'fill-text animated fadeIn'>
 					<h2>Experience</h2>
 					<br>
 					
 					<div class='row'>
 						<div class ='text-center'>
-							<img src="logo/mc_logo.png" class="main-img" alt="MCard logo">
+							<img src="Images/logo/mc_logo.png" class="main-img" alt="MCard logo">
 							<p><b>Jan 2015 - Aug 2015</b></p>
 							<p>Intern</p>
+							<p>Worked on the Dublin Data Architecture team as part of an internship.
 						</div>
 					</div>		
 						
@@ -63,21 +75,22 @@
 					<br>
 					<br>
 				
+				<!--Awards section-->
 				<div id='awa-txt' class = 'fill-text animated fadeIn'>
 					<h2>Awards and Acheivements</h2>
 					<br>
 					
 					<div class='row'>
 						<div class ='col-md-6 text-center mini-box'>
-							<img src="logo/achieve-logo.png" alt="MCard logo">
+							<img src="Images/logo/achieve-logo.png" alt="MCard logo">
 							<p><b>Hackathon Winner 2015</b></p>
 							<p>Member of the winning team in the MasterCard Intern Hackathon Challenge that took part in August 2015<br></p>
 						</div>
 							
 						<div class='col-md-6 text-center mini-box'>
-							<img src="logo/achieve-logo.png" alt="DIT logo">
-							<p><b>Academic Excellence 2013</b></p>
-							<p>Received for achieving exceptional grades in school exams</p>
+							<img src="Images/logo/achieve-logo.png" alt="DIT logo">
+							<p><b>Academic Excellence 2012</b></p>
+							<p>Received award from secondary school for achieving exceptional grades in school exams</p>
 						</div>		
 						
 					</div>
@@ -85,29 +98,59 @@
 					<br>
 				</div>
 				
+				<!--Education section-->
+				<div id='edu-txt' class = 'fill-text animated fadeIn'>
+					<h2>Education</h2>
+					<br>
+					
+					<div class='row'>
+						<div class ='col-md-6 text-center mini-box'>
+							<a href = 'http://www.dit.ie/'>
+								<img src="Images/education/dit-img.png" class = 'img-rounded' alt="College logo">
+							</a>
+							<p><b>Dublin Institute of Technology</b></p>
+							<p>2012 - Present</p>
+							<p>Currently studying BSc.(Hons) in Computer Science<br></p>
+						</div>
+							
+						<div class='col-md-6 text-center mini-box'>
+							<a href = 'http://www.dominicanwicklow.net/'>
+								<img src="Images/education/dcw-img.png" class = 'img-rounded' alt="School logo">
+							</a>
+							<p><b>Dominican College Wicklow</b></p>
+							<p>2006 - 2012</p>
+							<p>Completed Leaving Certificate Examination in 2012</p>
+						</div>		
+						
+					</div>
+					<br>
+					<br>
+				</div>
+				
+				<!--Skills section-->
 				<div id='skill-txt' class = 'fill-text animated fadeIn'>
 					<h2>Skills</h2>
 					<br>
 					
 					<div class='row'>
 						<div class ='col-md-4 text-center'>
-							<img src="skills/c-img.png" alt="c# skill">
+							<img src="Images/skills/c-img.png" alt="c# skill">
 							<p> C# </p>
-							<img src="skills/java-img.png" alt="java skill">
+							<img src="Images/skills/java-img.png" alt="java skill">
 							<p> Java </p>
 						</div>
 							
 						<div class='col-md-4 text-center'>
-							<img src="skills/db-img.png" alt="db skill">
+							<img src="Images/skills/db-img.png" alt="db skill">
 							<p>SQL</p>
-							<img src="skills/pg-img.png" alt="pg skill">
+							<img src="Images/skills/pg-img.png" alt="pg skill">
 							<p>PostgreSQL</p>
 						</div>
 						
 						<div class='col-md-4 text-center'>
-							<img src="skills/js-img.png" alt="js skill">
+							<img src="Images/skills/js-img.png" alt="js skill">
 							<p>JavaScript</p>
-							<img src="skills/html-img.png" alt="html skill">
+							<img src="Images/skills/html-img.png" alt="html skill">
 							<p>HTML</p>
 						</div>
 						
@@ -116,24 +159,25 @@
 					<br>
 				</div>
 				
+				<!--Interests section-->
 				<div id='int-txt' class = 'fill-text animated fadeIn'>
 					<h2>Interests</h2>
 					<br>
 					
 					<div class='row'>
 						<div class ='col-md-4 text-center'>
-							<img src="interests/book-img.png" alt="read img">
+							<img src="Images/interests/book-img.png" alt="read img">
 							<p>Reading</p>
 						</div>
 						
 						<div class ='col-md-4 text-center'>
-							<img src="interests/uke-img.png" alt="uke img">
+							<img src="Images/interests/uke-img.png" alt="uke img">
 							<p>Ukulele</p>
 						</div>
 						
 
 						<div class='text-center'>
-							<img src="interests/cat-img.png" alt="cat img">
+							<img src="Images/interests/cat-img.png" alt="cat img">
 							<p>Cats</p>
 						</div>	
 						
@@ -141,18 +185,16 @@
 					<br>
 					<br>
 				</div>
-				
-		</div>	
-				
-				
+		</div>			
 	</div>
   </div>
 
+  <!--Footer visible at all times. Contains links to github etc-->
   <div class = 'footer text-center'>
 		<p><span class = 'glyphicon glyphicon-copyright-mark'></span> 
 		Grace Sutton 2015 &nbsp;
 		<span class = 'glyphicon glyphicon-user'></span> 
-		<a href= 'https://ie.linkedin.com/in/gracesutton'>LinkedIn</a>&nbsp;
+		<a href= 'https://ie.linkedin.com/in/gracesutton'>LinkedIn</a> &nbsp;
 		<span class = 'glyphicon glyphicon-console'></span> 
 		<a href = 'https://github.com/SuttonGrace'>GitHub</a></p>
   </div>

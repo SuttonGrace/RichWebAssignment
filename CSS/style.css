@@ -9,9 +9,10 @@
 	font-family: Rockwell;
 }
 
+/*All buttons use .btn class, and then colour variations are added through JS*/
 .btn
 {
-	color: #fffff;
+	color: #FFFFFF;
 	border: none;
 	margin-bottom: 10px;
 }
@@ -41,6 +42,11 @@
 	background: #00A400;
 }
 
+.btn-edu
+{
+	background: #3366CC;
+}
+
 .btn-skill
 {
 	background: #FF5050;
@@ -60,10 +66,11 @@
 
 .bg-1 {
     background-color: #2B2B2B;
-	background-image: url('background/simple-one-color-grey-background-1920x1200.jpg');
+	background-image: url('../Images/background/simple-one-color-grey-background-1920x1200.jpg');
     color: #ffffff;
 }
 
+/*All box use .box class, and then colour variations are added through JS*/
 .box
 {
 	background: rgba(0, 0, 0, 0.5);
@@ -86,6 +93,11 @@
 	border: 5px solid #99FF33;
 }
 
+.box-edu
+{
+	border: 5px solid #3366CC
+}
+
 .box-skill
 {
 	border: 5px solid #FF5050;
@@ -95,7 +107,6 @@
 {
 	border: 5px solid #009999;
 }
-
 
 .footer
 {
@@ -122,4 +133,57 @@ a:hover {
 a:active {
     text-decoration: none;
 	color: #000000;
+}
+
+/* animations */
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
 }
