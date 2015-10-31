@@ -4,32 +4,51 @@
 	margin-top: 30px;
 }
 
-.hidden {
-        visibility:hidden;
-}
-.visible {
-        visibility:default;
-   }
-   
-.top
+.fixed-header
 {
-	opacity: 1.0;
-	z-index: 10000;
-	float:top;
+	font-family: Rockwell;
 }
-	
+
 .btn
 {
-  background: rgb(252, 51, 0);
-  color: #fffff;
-  border: none;
-  margin-bottom: 10px;
+	color: #fffff;
+	border: none;
+	margin-bottom: 10px;
 }
-.btn-yellow:hover, .btn-yellow:focus {
-  background: rgb(252, 255, 179);
+
+.btn:hover
+{
+  background: #939393;
 }
-.btn-yellow:active {
-  background: rgb(247, 255, 71);
+
+.btn:focus 
+{
+	border: solid #939393;
+}
+
+.btn-abt
+{
+	background: #FF3300;
+}
+
+.btn-exp
+{
+	background: rgb(110, 37, 74);
+}
+
+.btn-awa
+{
+	background: #00A400;
+}
+
+.btn-skill
+{
+	background: #FF5050;
+}
+
+.btn-int
+{
+	background: #009999;
 }
 
 .fill-text
@@ -45,66 +64,62 @@
     color: #ffffff;
 }
 
-.fixed-header
-{
-	position:absolute;
-}
-
-
-.box-abt
+.box
 {
 	background: rgba(0, 0, 0, 0.5);
 	border-radius: 25px;
-	border: 5px solid #FF3300;
 	margin-top: 5%;
 	margin-bottom:5%;
+}
+.box-abt
+{
+	border: 5px solid #FF3300;
 }
 
 .box-exp
 {
-	background: rgba(0, 0, 0, 0.5);
-	border-radius: 25px;
 	border: 5px solid #6E254A;
-	margin-top: 5%;
-	margin-bottom:5%;
 }
 
 .box-awa
 {
-	background: rgba(0, 0, 0, 0.5);
-	border-radius: 25px;
-	border: 5px solid #00A400;
-	margin-top: 5%;
-	margin-bottom:5%;
+	border: 5px solid #99FF33;
 }
 
 .box-skill
 {
-	background: rgba(0, 0, 0, 0.5);
-	border-radius: 25px;
-	border: 5px solid #FFCC00;
-	margin-top: 5%;
-	margin-bottom:5%;
+	border: 5px solid #FF5050;
 }
 
 .box-int
 {
-	background: rgba(0, 0, 0, 0.5);
-	border-radius: 25px;
 	border: 5px solid #009999;
-	margin-top: 5%;
-	margin-bottom:5%;
 }
 
-.textarea
+
+.footer
 {
-	
-	color: #ffffff;
+	color: #000000;
+	font-family: Rockwell;
+    text-decoration: none;
 }
 
-.mini-box
-{
-	border-radius: 25px;
-	margin-left: 10%;
+a:link {
+    text-decoration: none;
+	color: #000000;
 }
 
+a:visited {
+    text-decoration: none;
+	color: #000000;
+}
+
+a:hover {
+    text-decoration: none;
+	color: #939393;
+}
+
+a:active {
+    text-decoration: none;
+	color: #000000;
+}
